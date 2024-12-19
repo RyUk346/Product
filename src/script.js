@@ -39,6 +39,7 @@ function decrementCount() {
 function updateCart() {
   const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
   document.getElementById("cart-count").innerText = `${totalItems}`;
+  document.getElementById("cart-count-1").innerText = `${totalItems}`;
 }
 
 // Add to cart

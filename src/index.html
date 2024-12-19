@@ -10,17 +10,17 @@
   <body class="w-full h-screen font-roboto" onLoad="preLoad()">
     <div class="flex justify-center items-center">
       <div
-        class="max-w-[1320px] max-h-[720px] mt-[60px] ml-[60px] gap-[20px] sm:gap-[30px] md:gap-[40px] lg:gap-[50px] xl:gap-[60px] lg:flex"
+        class="max-w-[1320px] max-h-[720px] mt-[10px] ml-[10px] md:ml-[80px] md:mt-[60px] lg:ml[120px] gap-[20px] sm:gap-[30px] md:gap-[40px] lg:gap-[50px] xl:gap-[60px] lg:flex"
       >
-        <div class="max-w-[630px] h-[720px]">
+        <div class="max-w-[630px] max-h-[720px]">
           <img
             id="a"
             src="./purple.jpg"
-            class="w-full h-[720px] rounded-[4px]"
+            class="w-full max-h-[720px] rounded-[4px]"
             alt="Product Image"
           />
         </div>
-        <div class="max-w-[630px] h-[539px] py-[120px]">
+        <div class="max-w-[630px] max-h-[539px] py-2 lg:py-[120px]">
           <div>
             <h1 class="text-[40px] leading-[44px] font-bold text-[#364A63]">
               Classy Modern Smart watch
@@ -139,7 +139,7 @@
               $79.00
             </h1>
           </div>
-          <div class="w-[600px]">
+          <div class="max-w-[600px]">
             <h1 class="text-[#8091A7] text-[18px]">
               I must explain to you how all this mistaken idea of denouncing
               pleasure and praising pain was born...
@@ -323,10 +323,25 @@
             </div>
           </div>
         </div>
+        <div class="flex justify-center py-4 lg:hidden">
+          <button
+            onclick="openCheckout()"
+            class="bg-[#FFBB5A] text-[#364A63] rounded-[20px] w-[139px] h-[42px] font-bold text-[13px] leading-[20px] tracking-[0.26px] flex justify-center items-center"
+          >
+            Checkout
+
+            <h1
+              id="cart-count"
+              class="bg-white w-[19px] h-[20px] ml-2 rounded-[5px]"
+            >
+              0
+            </h1>
+          </button>
+        </div>
       </div>
     </div>
     <!-- Checkout Button -->
-    <div class="mt-[550px] lg:mt-[80px] flex justify-center pb-[20px]">
+    <div class="lg:flex hidden justify-center py-4">
       <button
         onclick="openCheckout()"
         class="bg-[#FFBB5A] text-[#364A63] rounded-[20px] w-[139px] h-[42px] font-bold text-[13px] leading-[20px] tracking-[0.26px] flex justify-center items-center"
@@ -334,12 +349,13 @@
         Checkout
 
         <h1
-          id="cart-count"
+          id="cart-count-1"
           class="bg-white w-[19px] h-[20px] ml-2 rounded-[5px]"
         >
           0
         </h1>
       </button>
+    </div>
     </div>
     <!-- Cart Popup -->
     <div
@@ -348,7 +364,7 @@
       style="display: none"
     >
       <div
-        class="w-[400px] md:w-[651px] max-h-[480px] bg-white p-6 sm:p-8 md:p-11 rounded-[20px] gap-[16px]"
+        class="max-w-[651px] max-h-[480px] bg-white p-6 sm:p-8 md:p-11 rounded-[20px] gap-[16px]"
       >
         <h1 class="text-[#364A63] text-[22px] leading-[24px] font-bold">
           Your Cart
@@ -356,7 +372,7 @@
         <div id="cart-list"></div>
         <div class="flex justify-end gap-[20px] mt-4">
           <button
-            onClick="{closeCheckout}"
+            onClick="closeCheckout()"
             class="whitespace-nowrap w-[152px] h-[36px] rounded-[3px] border border-[#DBDFEA] py-2 px-[18px] gap-[10px] text-[#364A63] text-[13px] leading-[20px] tracking-[0.26px]"
           >
             Continue Shopping
