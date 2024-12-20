@@ -135,7 +135,7 @@ function openCheckout() {
 
   // Add total price and quantity row
   const totalDiv = `
-    <div class="w-[563px] h-[52px] items-center text-[#373737] text-[16px] flex justify-between font-bold text-lg mt-4">
+    <div class="max-w-[563px] h-[52px] items-center text-[#373737] text-[16px] flex justify-between font-bold text-lg mt-4">
       <div class="w-[379px]">Total </div>
       <div class="flex gap-[68px]"><div class="w-[9px] mr-7">${totalQuantity}</div>
       <div class="w-[18px] text-right mr-6">$${total.toFixed(2)}</div></div>
