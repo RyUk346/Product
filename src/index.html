@@ -149,55 +149,52 @@
           <div class="max-w-[630px] pt-[20px]">
             <h1 class="font-bold text-[18px] text-[#364A63]">Band Color</h1>
             <div>
-              <form autocomplete="off" class="flex gap-4">
-                <input
-                  type="radio"
-                  name="color"
-                  value="Purple"
-                  onclick="im('a1')"
-                  class="peer hidden"
-                  id="radio1"
-                />
-                <label
-                  for="radio1"
-                  class="w-6 h-6 rounded-full bg-purple-500 peer-checked:ring-2 peer-checked:ring-purple-700 cursor-pointer"
-                ></label>
-                <input
-                  type="radio"
-                  name="color"
-                  value="Cyan"
-                  onclick="im('a2')"
-                  class="peer hidden"
-                  id="radio2"
-                />
-                <label
-                  for="radio2"
-                  class="w-6 h-6 rounded-full bg-cyan-500 peer-checked:ring-2 peer-checked:ring-cyan-700 cursor-pointer"
-                ></label>
-                <input
-                  type="radio"
-                  name="color"
-                  value="Black"
-                  onclick="im('a3')"
-                  class="peer hidden"
-                  id="radio3"
-                />
-                <label
-                  for="radio3"
-                  class="w-6 h-6 rounded-full bg-black peer-checked:ring-2 peer-checked:ring-gray-700 cursor-pointer"
-                ></label>
-                <input
-                  type="radio"
-                  name="color"
-                  value="Blue"
-                  onclick="im('a4')"
-                  class="peer hidden"
-                  id="radio4"
-                />
-                <label
-                  for="radio4"
-                  class="w-6 h-6 rounded-full bg-blue-500 peer-checked:ring-2 peer-checked:ring-blue-700 cursor-pointer"
-                ></label>
+              <form autocomplete="off" class="flex gap-[19px]">
+                <label for="radio1" class="relative flex items-center justify-center w-6 h-6 cursor-pointer">
+                  <input
+                    type="radio"
+                    name="color"
+                    value="Purple"
+                    onclick="im('a1')"
+                    id="radio1"
+                    class="appearance-none w-full h-full rounded-full checked:border-2 checked:border-[#816BFF] cursor-pointer"
+                  />
+                  <span class="absolute w-4 h-4 bg-[#816BFF] rounded-full"></span>
+                </label>
+                <label for="radio2" class="relative flex items-center justify-center w-6 h-6 cursor-pointer">
+                  <input
+                    type="radio"
+                    name="color"
+                    value="Cyan"
+                    onclick="im('a2')"
+                    id="radio2"
+                    class="appearance-none w-full h-full rounded-full checked:border-2 checked:border-[#1FCEC9] cursor-pointer"
+                  />
+                  <span class="absolute w-4 h-4 bg-[#1FCEC9] rounded-full"></span>
+                </label>
+                <label for="radio3" class="relative flex items-center justify-center w-6 h-6 cursor-pointer">
+                  <input
+                    type="radio"
+                    name="color"
+                    value="Black"
+                    onclick="im('a3')"
+                    id="radio3"
+                    class="appearance-none w-full h-full rounded-full checked:border-2 checked:border-[#4B97D3] cursor-pointer"
+                  />
+                  <span class="absolute w-4 h-4 bg-[#4B97D3] rounded-full"></span>
+                </label>
+                <label for="radio4" class="relative flex items-center justify-center w-6 h-6 cursor-pointer">
+                  <input
+                    type="radio"
+                    name="color"
+                    value="Blue"
+                    onclick="im('a4')"
+                    id="radio4"
+                    class="appearance-none w-full h-full rounded-full checked:border-2 checked:border-[#3B4747] cursor-pointer"
+                  />
+                  <span class="absolute w-4 h-4 bg-[#3B4747] rounded-full"></span>
+                </label>
+                
               </form>
             </div>
           </div>
