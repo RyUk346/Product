@@ -94,8 +94,8 @@ function openCheckout() {
 
   // Add table headers
   const tableHeader = `
-    <div class="max-w-[563px] h-[36px] flex pr-[4px] pt-[8px] border-b py-2 text-[14px] leading-[23.1px] text-[#8091A7]">
-      <div class="w-[278px] mr-6">Item</div>
+    <div class="max-w-[563px] h-[36px] flex pr-[4px] pt-[8px] border-b py-2 text-[14px] leading-[23.1px] text-[#8091A7] gap-1">
+      <div class="w-[230px] md:w-[278px] mr-8">Item</div>
       <div class="w-[62px]">Color</div>
       <div class="w-[69px]">Size</div>
       <div class="w-[59px]">Qnt</div>
@@ -113,14 +113,16 @@ function openCheckout() {
     totalQuantity += product.quantity;
 
     const itemRow = `
-      <div class="w-[563px] h-[52px] items-center justify-center flex py-2 border-b text-[14px] leading-[23.1px] text-[#364A63]">
-        <div class="w-[278px] h-[36px] flex items-center gap-4 mr-6">
+      <div class="max-w-[563px] h-[52px] items-center justify-center flex py-2 border-b text-[14px] leading-[23.1px] text-[#364A63] gap-1">
+        <div class="w-[278px] h-[36px] flex items-center gap-2 mr-6">
           <img src="${getImageSrc(
             product.color
           )}" class="w-9 h-9 rounded" alt="Product" />
           <span>${product.name}</span>
         </div>
-        <div class="w-[62px]">${product.color}</div>
+        <div class="w-[62px] ml-[-20px] sm:ml-[-40px] min-[768px]:ml-[0px]">${
+          product.color
+        }</div>
         <div class="w-[69px] font-bold">${product.size}</div>
         <div class="w-[59px] font-bold">${product.quantity}</div>
         <div class="w-[91px] font-bold text-right">$${itemTotal.toFixed(
