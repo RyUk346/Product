@@ -6,8 +6,8 @@ function preLoad() {
   const images = [
     { id: "a1", src: "./purple.jpg" },
     { id: "a2", src: "./cyan.png" },
-    { id: "a3", src: "./black.png" },
-    { id: "a4", src: "./blue.png" },
+    { id: "a3", src: "./blue.png" },
+    { id: "a4", src: "./black.png" },
   ];
   images.forEach((image) => {
     const img = new Image();
